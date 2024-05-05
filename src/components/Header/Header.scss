@@ -1,0 +1,54 @@
+.header {
+    height: 34vw;
+    margin: 30px auto;
+    background: url("../../assets/header_img.png") no-repeat;
+    background-size: contain;
+    position: relative;
+    .header-contents {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 1.5vw;
+        max-width: 50%;
+        bottom: 10%;
+        left: 6vw;
+        animation-duration: 3s;
+
+        @media only screen and (max-width: 1050px) {
+            max-width: 45%;
+        }
+
+        @media only screen and (max-width: 750px) {
+            max-width: 65%;
+        }
+
+        h2 {
+            font-weight: 500;
+            color: white;
+            font-size: max(4.5vw, 22px);
+        }
+
+        p {
+            color: white;
+            font-size: 1vw;
+
+            @media only screen and (max-width: 750px) {
+                display: none;
+            }
+        }
+
+        button {
+            border: none;
+            color: #747474;
+            font-weight: 400;
+            padding: 1vw 2.3vw;
+            background-color: white;
+            font-size: max(1vw, 13px);
+            border-radius: 50px;
+            @media only screen and (max-width: 750px) {
+                padding: 2vw 4vw;
+            }
+        }
+    }
+}
